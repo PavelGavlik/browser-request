@@ -18,6 +18,13 @@ request.log = {
   'trace': noop, 'debug': noop, 'info': noop, 'warn': noop, 'error': noop
 }
 
+// XHR constants - Angular's polyfill doesn't expose them
+XHR.UNSENT = 0
+XHR.OPENED = 1
+XHR.HEADERS_RECEIVED = 2
+XHR.LOADING = 3
+XHR.DONE = 4
+
 var DEFAULT_TIMEOUT = 3 * 60 * 1000 // 3 minutes
 
 //
